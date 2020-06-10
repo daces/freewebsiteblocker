@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bloked</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="icon/16.png" type="image/png" />
+    <style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #8697cb12;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 75%;
+}
+.holder__logo {
+  text-align: center;
+  width: 400px;
+  background: #fff;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #d4d4d4;
+  position: relative;
+  padding: 20px;
+}
+.holder__img {
+  display: inline-block;
+  padding: 29px;
+  height: auto;
+}
+.holder__svg {
+  width: 120px;
+  height: 120px;
+}
+.holder__path--color {
+  fill: rgb(36, 137, 255);
+}
+.holder__message {
+  margin: 20px;
+}
+.holder__input {
+  margin: 20px;
+}
+.holder__input-blocked {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  color: #868686;
+}
+.holder__button {
+  width: 49%;
+}
+.holder__buttons {
+
+}
+.holder__button-allow {
+  outline: none;
+  padding: 18px;
+  background: #8697cb;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.holder__button-deny {
+  outline: none;
+  display: block;
+  float: right;
+  padding: 17px;
+  background: #fff;
+  border: 0;
+  color: #556080;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid #556080;
+}
+.holder__button-allow:hover, .holder__button-allow:focus {
+  color: #fff !important;
+  background-color: #556080;
+}
+    </style>
+  </head>
+  <body>
+
+  <div class="holder">
+    <div class="holder__logo">
+      <div class="holder__img">
+      <svg xmlns="http://www.w3.org/2000/svg" class="holder__svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 58 58" style="" xml:space="preserve">
+<path style="fill:#8697CB;" d="M29,0c0,0-6.667,8-22,8v19.085c0,9.966,4.328,19.577,12.164,25.735C21.937,55,25.208,56.875,29,58  c3.792-1.125,7.062-3,9.836-5.18C46.672,46.662,51,37.051,51,27.085V8C35.667,8,29,0,29,0z"></path>
+<path style="fill:#556080;" d="M29,51.661c-2.123-0.833-4.178-2.025-6.128-3.558C16.69,43.245,13,35.388,13,27.085V13.628  c7.391-0.943,12.639-3.514,16-5.798c3.361,2.284,8.609,4.855,16,5.798v13.457c0,8.303-3.69,16.16-9.871,21.018  C33.178,49.636,31.123,50.828,29,51.661z"></path>
+<path style="fill:#F0C419;" d="M34,38l-2.687-10.747C32.331,26.528,33,25.345,33,24c0-2.209-1.791-4-4-4s-4,1.791-4,4  c0,1.345,0.669,2.528,1.687,3.253L24,38H34z"></path>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+      </div>
+      <div class="holder__message">
+        <p>WebSafe has prevented the following page from loading.</p>
+      </div>
+      <div class="holder__input">
+        <input class="holder__input-blocked" type="text" readonly="readonly"/>
+      </div>
+      <div class="holder__buttons">
+        <button class="holder__button holder__button-allow">Allow</button>
+        <a href="" target="_blank" class="holder__button holder__button-deny" title="Search the website on google.">Search it</a>
+      </div>
+      
+    </div>
+  </div>
+  <script type="text/javascript" src="component.js"></script>
+  <script type="text/javascript" src="blocked.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+{
+   "author": {
+      "email": "dragssia@gmail.com"
+   },
+   "background": {
+      "scripts": [ "component.js", "database.js", "log.js", "background.js"  ],
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icon/19.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Web Safe"
+   },
+   "content_scripts": [
+     {
+      "matches": ["<all_urls>"],
+      "css": ["websafestyle.css"],
+      "js": ["component.js"]
+     }
+   ],
+   "description": "Test test",
+   "icons": {
+      "128": "icon/128.png",
+      "16": "icon/16.png",
+      "19": "icon/19.png",
+      "32": "icon/32.png",
+      "48": "icon/48.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "18.0",
+   "name": "Web Safe",
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; object-src 'self'",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "http://*/*", "<all_urls>", "https://*/*", "browsingData", "webRequest", "webNavigation", "activeTab", "webRequestBlocking", "unlimitedStorage", "storage", "contextMenus", "privacy"],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}
